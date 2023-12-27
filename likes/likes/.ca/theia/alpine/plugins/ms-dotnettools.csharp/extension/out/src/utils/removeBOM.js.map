@@ -1,0 +1,1 @@
+{"version":3,"file":"removeBOM.js","sourceRoot":"","sources":["../../../src/utils/removeBOM.ts"],"names":[],"mappings":";AAAA;;;gGAGgG;;;AAEhG,iDAAkD;AAClD,yCAAwC;AAExC,SAAgB,mBAAmB,CAAC,MAAc;IAC9C,OAAe,eAAe,CAAC,MAAM,CAAC,CAAC;AAC3C,CAAC;AAFD,kDAEC;AAED,SAAgB,mBAAmB,CAAC,IAAY;IAC5C,OAAO,mBAAe,CAAC,IAAI,CAAC,IAAI,EAAE,CAAC,CAAC;AACxC,CAAC;AAFD,kDAEC"}

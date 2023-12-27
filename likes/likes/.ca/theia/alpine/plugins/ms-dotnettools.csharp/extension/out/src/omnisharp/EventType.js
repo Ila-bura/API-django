@@ -1,0 +1,93 @@
+"use strict";
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.EventType = void 0;
+var EventType;
+(function (EventType) {
+    EventType[EventType["OmnisharpStart"] = 0] = "OmnisharpStart";
+    EventType[EventType["TelemetryEvent"] = 1] = "TelemetryEvent";
+    EventType[EventType["TelemetryEventWithMeasures"] = 2] = "TelemetryEventWithMeasures";
+    EventType[EventType["OmnisharpDelayTrackerEventMeasures"] = 3] = "OmnisharpDelayTrackerEventMeasures";
+    EventType[EventType["OmnisharpInitialisation"] = 4] = "OmnisharpInitialisation";
+    EventType[EventType["OmnisharpLaunch"] = 5] = "OmnisharpLaunch";
+    EventType[EventType["PackageInstallStart"] = 6] = "PackageInstallStart";
+    EventType[EventType["PackageInstallation"] = 7] = "PackageInstallation";
+    EventType[EventType["LogPlatformInfo"] = 8] = "LogPlatformInfo";
+    EventType[EventType["InstallationStart"] = 9] = "InstallationStart";
+    EventType[EventType["InstallationFailure"] = 10] = "InstallationFailure";
+    EventType[EventType["DownloadProgress"] = 11] = "DownloadProgress";
+    EventType[EventType["OmnisharpFailure"] = 12] = "OmnisharpFailure";
+    EventType[EventType["OmnisharpRequestMessage"] = 13] = "OmnisharpRequestMessage";
+    EventType[EventType["TestExecutionCountReport"] = 14] = "TestExecutionCountReport";
+    EventType[EventType["OmnisharpServerOnError"] = 15] = "OmnisharpServerOnError";
+    EventType[EventType["OmnisharpServerMsBuildProjectDiagnostics"] = 16] = "OmnisharpServerMsBuildProjectDiagnostics";
+    EventType[EventType["OmnisharpServerUnresolvedDependencies"] = 17] = "OmnisharpServerUnresolvedDependencies";
+    EventType[EventType["OmnisharpServerEnqueueRequest"] = 18] = "OmnisharpServerEnqueueRequest";
+    EventType[EventType["OmnisharpServerProcessRequestStart"] = 19] = "OmnisharpServerProcessRequestStart";
+    EventType[EventType["OmnisharpEventPacketReceived"] = 20] = "OmnisharpEventPacketReceived";
+    EventType[EventType["OmnisharpServerOnServerError"] = 21] = "OmnisharpServerOnServerError";
+    EventType[EventType["OmnisharpOnMultipleLaunchTargets"] = 22] = "OmnisharpOnMultipleLaunchTargets";
+    EventType[EventType["WorkspaceInformationUpdated"] = 23] = "WorkspaceInformationUpdated";
+    EventType[EventType["EventWithMessage"] = 24] = "EventWithMessage";
+    EventType[EventType["DownloadStart"] = 25] = "DownloadStart";
+    EventType[EventType["DownloadFallBack"] = 26] = "DownloadFallBack";
+    EventType[EventType["DownloadSizeObtained"] = 27] = "DownloadSizeObtained";
+    EventType[EventType["ZipError"] = 28] = "ZipError";
+    EventType[EventType["ReportDotNetTestResults"] = 29] = "ReportDotNetTestResults";
+    EventType[EventType["DotNetTestRunStart"] = 30] = "DotNetTestRunStart";
+    EventType[EventType["DotNetTestDebugStart"] = 31] = "DotNetTestDebugStart";
+    EventType[EventType["DotNetTestDebugProcessStart"] = 32] = "DotNetTestDebugProcessStart";
+    EventType[EventType["DotNetTestsInClassRunStart"] = 33] = "DotNetTestsInClassRunStart";
+    EventType[EventType["DotNetTestsInClassDebugStart"] = 34] = "DotNetTestsInClassDebugStart";
+    EventType[EventType["DocumentSynchronizationFailure"] = 35] = "DocumentSynchronizationFailure";
+    EventType[EventType["OpenURL"] = 36] = "OpenURL";
+    EventType[EventType["IntegrityCheckFailure"] = 37] = "IntegrityCheckFailure";
+    EventType[EventType["IntegrityCheckSuccess"] = 38] = "IntegrityCheckSuccess";
+    EventType[EventType["RazorPluginPathSpecified"] = 39] = "RazorPluginPathSpecified";
+    EventType[EventType["RazorPluginPathDoesNotExist"] = 40] = "RazorPluginPathDoesNotExist";
+    EventType[EventType["DebuggerPrerequisiteFailure"] = 41] = "DebuggerPrerequisiteFailure";
+    EventType[EventType["CommandDotNetRestoreProgress"] = 42] = "CommandDotNetRestoreProgress";
+    EventType[EventType["DownloadValidation"] = 43] = "DownloadValidation";
+    EventType[EventType["DotNetTestDebugComplete"] = 44] = "DotNetTestDebugComplete";
+    EventType[EventType["LatestBuildDownloadStart"] = 45] = "LatestBuildDownloadStart";
+    EventType[EventType["ActiveTextEditorChanged"] = 46] = "ActiveTextEditorChanged";
+    EventType[EventType["OmnisharpOnBeforeServerStart"] = 47] = "OmnisharpOnBeforeServerStart";
+    EventType[EventType["ProjectJsonDeprecatedWarning"] = 48] = "ProjectJsonDeprecatedWarning";
+    EventType[EventType["OmnisharpServerProcessRequestComplete"] = 49] = "OmnisharpServerProcessRequestComplete";
+    EventType[EventType["InstallationSuccess"] = 50] = "InstallationSuccess";
+    EventType[EventType["CommandDotNetRestoreStart"] = 51] = "CommandDotNetRestoreStart";
+    EventType[EventType["DebuggerNotInstalledFailure"] = 52] = "DebuggerNotInstalledFailure";
+    EventType[EventType["ShowOmniSharpChannel"] = 53] = "ShowOmniSharpChannel";
+    EventType[EventType["ActivationFailure"] = 54] = "ActivationFailure";
+    EventType[EventType["ProjectModified"] = 55] = "ProjectModified";
+    EventType[EventType["RazorDevModeActive"] = 56] = "RazorDevModeActive";
+    EventType[EventType["DotNetTestDebugStartFailure"] = 57] = "DotNetTestDebugStartFailure";
+    EventType[EventType["DotNetTestDebugWarning"] = 58] = "DotNetTestDebugWarning";
+    EventType[EventType["DotNetTestRunFailure"] = 59] = "DotNetTestRunFailure";
+    EventType[EventType["DotNetTestMessage"] = 60] = "DotNetTestMessage";
+    EventType[EventType["OmnisharpServerVerboseMessage"] = 61] = "OmnisharpServerVerboseMessage";
+    EventType[EventType["OmnisharpServerMessage"] = 62] = "OmnisharpServerMessage";
+    EventType[EventType["OmnisharpServerOnStdErr"] = 63] = "OmnisharpServerOnStdErr";
+    EventType[EventType["DownloadFailure"] = 64] = "DownloadFailure";
+    EventType[EventType["DownloadSuccess"] = 65] = "DownloadSuccess";
+    EventType[EventType["CommandDotNetRestoreSucceeded"] = 66] = "CommandDotNetRestoreSucceeded";
+    EventType[EventType["DebuggerPrerequisiteWarning"] = 67] = "DebuggerPrerequisiteWarning";
+    EventType[EventType["CommandDotNetRestoreFailed"] = 68] = "CommandDotNetRestoreFailed";
+    EventType[EventType["OmnisharpRestart"] = 69] = "OmnisharpRestart";
+    EventType[EventType["OmnisharpServerDequeueRequest"] = 70] = "OmnisharpServerDequeueRequest";
+    EventType[EventType["OmnisharpServerOnStop"] = 71] = "OmnisharpServerOnStop";
+    EventType[EventType["OmnisharpServerOnStart"] = 72] = "OmnisharpServerOnStart";
+    EventType[EventType["OmnisharpOnBeforeServerInstall"] = 73] = "OmnisharpOnBeforeServerInstall";
+    EventType[EventType["ProjectConfigurationReceived"] = 74] = "ProjectConfigurationReceived";
+    EventType[EventType["ProjectDiagnosticStatus"] = 75] = "ProjectDiagnosticStatus";
+    EventType[EventType["DotNetTestRunInContextStart"] = 76] = "DotNetTestRunInContextStart";
+    EventType[EventType["DotNetTestDebugInContextStart"] = 77] = "DotNetTestDebugInContextStart";
+    EventType[EventType["TelemetryErrorEvent"] = 78] = "TelemetryErrorEvent";
+    EventType[EventType["OmnisharpServerRequestCancelled"] = 79] = "OmnisharpServerRequestCancelled";
+})(EventType = exports.EventType || (exports.EventType = {}));
+//Note that the EventType protocol is shared with Razor.VSCode and the numbers here should not be altered
+//The enum is needed because we use webpack for the extension(which trims the names in production mode) and need to be able to filter on the eventType
+//# sourceMappingURL=EventType.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"slnWithCsproj.js","sourceRoot":"","sources":["../../../../test/integrationTests/testAssets/slnWithCsproj.ts"],"names":[],"mappings":";AAAA;;;gGAGgG;;AAIhG,IAAI,SAAS,GAAwB;IACjC,WAAW,EAAE,2BAA2B;IACxC,QAAQ,EAAE,CAAC;YACP,gBAAgB,EAAE,oBAAoB;SACzC,EAAC;YACE,gBAAgB,EAAE,oBAAoB;SACzC,EAAC;YACE,gBAAgB,EAAE,kBAAkB;SACvC,CAAC;CACL,CAAC;AAEF,kBAAe,SAAS,CAAC"}
