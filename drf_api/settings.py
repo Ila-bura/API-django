@@ -65,7 +65,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['8000-ila-bura-api-django-2eeqmlxpcp.us2.codeanyapp.com', 'https://api-project-ila-f8d6f876a2c2.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ila-bura-api-django-2eeqmlxpcp.us2.codeanyapp.com', 'api-project-ila-f8d6f876a2c2.herokuapp.com']
 
 
 # Application definition
